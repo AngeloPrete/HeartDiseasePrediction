@@ -15,7 +15,6 @@ from BayesianNetwork import stampaReteBayesiana, apprendi_rete_bayesiana
 from RagionamentoRelazionale import aggiungi_fatti, aggiungi_regole, inferisci_feature
 from pyswip import Prolog
 import os
-from imblearn.over_sampling import SMOTE
 
 # Ottieni il percorso del file corrente
 current_dir = os.path.dirname(os.path.realpath(__file__))
