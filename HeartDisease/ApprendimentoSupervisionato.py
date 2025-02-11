@@ -23,21 +23,6 @@ def getGrid_params(model) :
     
     return param
 
-def print_scores(model,accuracy,recall,f1):
-    if isinstance(model,RandomForestClassifier) :
-        print(f'Il modello Random Forest ha una accuratezza pari a : {accuracy:.4f}')
-        print(f'Il modello Random Forest ha un recall pari a : {recall:.4f}')
-        print(f'Il modello Random Forest ha la metrica F1 pari a : {f1:.4f}')
-    else :
-        if isinstance(model,DecisionTreeClassifier) :
-            print(f'Il modello DecisionTree ha una accuratezza pari a : {accuracy:.4f}')
-            print(f'Il modello DecisionTree ha un recall pari a : {recall:.4f}')
-            print(f'Il modello DecisionTree ha la metrica F1 pari a : {f1:.4f}')
-        else :
-            print(f'Il modello LogisticRegression ha una accuratezza pari a : {accuracy:.4f}')
-            print(f'Il modello LogisticRegression ha un recall pari a : {recall:.4f}')
-            print(f'Il modello LogisticRegression ha la metrica F1 pari a : {f1:.4f}')
-
 # Funzione per addestrare e valutare il modello passato come parametro
 def addestra(X_train, X_test, y_train, y_test,X,y,model):
     
